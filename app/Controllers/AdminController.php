@@ -8,4 +8,9 @@ class AdminController extends BaseController
     {
         return view('admin_index');
     }
+
+    public function type()
+    {
+        return view('admin_typePage');
+    }
 }

@@ -30,7 +30,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="#">ผู้ใช้งาน</a></li>
                         <li><a class="dropdown-item" href="#">การรีวิว</a></li>
-                        <li><a class="dropdown-item" href="#">หมวดหมู่</a></li>
+                        <li><a class="dropdown-item" href="/type">หมวดหมู่</a></li>
                         <li><a class="dropdown-item" href="#">เรื่องร้องเรียน</a></li>
                     </ul>
                 </li>
