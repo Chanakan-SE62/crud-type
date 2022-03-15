@@ -1,28 +1,3 @@
-<style>
-    .div-table-type {
-        display: flex;
-        justify-content: center;
-    }
-
-    .table-striped {
-        margin-top: 5%;
-        width: 40%;
-    }
-
-    .thead-type {
-        background-color: #EF5DA8;
-        color: white;
-    }
-
-    .btn-edit {
-        border-radius: 20px;
-    }
-
-    .btn-delete {
-        border-radius: 20px;
-    }
-</style>
-
 <div class="div-table-type">
     <table class="table table-striped">
         <thead class="thead-type">
@@ -30,20 +5,17 @@
                 <td>ลำดับ</td>
                 <td>ชื่อหมวดหมู่</td>
                 <td></td>
-                <td></td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody-type">
             <tr>
-                <td>1</td>
-                <td>ภูเขา</td>
-                <td>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
+                <td class="id-type">1</td>
+                <td><lable>ภูเขา</lable></td>
+                <td class="button-table-type">
+                    <button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
                         แก้ไข
                     </button>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-danger btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         ลบ
                     </button>
                 </td>
