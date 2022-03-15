@@ -17,6 +17,15 @@
 
     <link rel="stylesheet" href="/CSS/table-type.css">
 
+    <style>
+        .container {
+            padding: 0% 10% 0% 10%;
+        }
+        .text-type {
+            /* text-align: center; */
+            margin: 8% 0% 2% 0%;
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -25,6 +34,8 @@
     ?>
     <?php require('components/navbar.php'); ?>
     <div class="container">
+        <h2 class="text-type">จัดการหมวดหมู่กิจกรรม</h2>
+        <hr/>
         <?php require('components/table-type.php'); ?>
     </div>
 </body>
