@@ -12,6 +12,8 @@
 
     <title>Manage Category</title>
 
+    <link rel="stylesheet" href="/CSS/table-type.css">
+
 </head>
 <body>
     <?php require('components/navbar.php'); ?>

@@ -1,0 +1,33 @@
+.div-table-type {
+    display: flex;
+    justify-content: center;
+}
+
+.table-striped {
+    margin-top: 5%;
+    width: 50%;
+}
+.thead-type {
+    background-color: #EF5DA8;
+    color: white;
+    text-align: center;
+}
+.id-type {
+    text-align: center;
+}
+
+.button-table-type{
+    display: flex;
+    justify-content: center;
+}
+.btn-edit {
+    border-radius: 20px;
+    width: 100px;
+    margin: 0% 2% 0% 0%;
+}
+
+.btn-delete {
+    border-radius: 20px;
+    width: 100px;
+    margin: 0% 0% 0% 2%;
+}
