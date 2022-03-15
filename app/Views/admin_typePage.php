@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    $con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . mysqli_error($con));
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +19,10 @@
 
 </head>
 <body>
+    <?php
+        $sql_category = "SELECT * FROM category";
+        $query = mysqli_query($con, $sql_category);
+    ?>
     <?php require('components/navbar.php'); ?>
     <div class="container">
         <?php require('components/table-type.php'); ?>

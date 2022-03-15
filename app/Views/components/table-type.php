@@ -8,18 +8,20 @@
             </tr>
         </thead>
         <tbody class="tbody-type">
-            <tr>
-                <td class="id-type">1</td>
-                <td><lable>ภูเขา</lable></td>
-                <td class="button-table-type">
-                    <button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
-                        แก้ไข
-                    </button>
-                    <button type="button" class="btn btn-danger btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ลบ
-                    </button>
-                </td>
-            </tr>
+            <?php foreach ($query as $value) { ?>
+                <tr>
+                    <td class="id-type"><?= $value['categoryId'] ?></td>
+                    <td><lable><?= $value['name_category'] ?></lable></td>
+                    <td class="button-table-type">
+                        <button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
+                            แก้ไข
+                        </button>
+                        <button type="button" class="btn btn-danger btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            ลบ
+                        </button>
+                    </td>
+                </tr>
+            <?php } ?>
         </tbody>
     </table>
 </div>
