@@ -6,14 +6,11 @@
 .table-striped {
     margin-top: 5%;
     width: 50%;
+    text-align: center;
 }
 .thead-type {
     background-color: #EF5DA8;
     color: white;
-    text-align: center;
-}
-.id-type {
-    text-align: center;
 }
 
 .button-table-type{
