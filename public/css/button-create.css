@@ -1,0 +1,28 @@
+.btn-create {
+    border-radius: 20px;
+    width: 100px;
+    height: 50%;
+}
+.modal-title-create {
+    color: #EF5DA8;
+    font-weight: bold;
+}
+
+.modal-body-create {
+    padding: 6% 10%;
+}
+.form-label-create {
+    margin: 0% 0% 1% 1%;
+}
+.form-control-create {
+    border-radius: 20px;
+}
+
+.btn-cancel-create {
+    border-radius: 20px;
+    width: 100px;
+}
+.btn-ok-create {
+    border-radius: 20px;
+    width: 100px;
+}

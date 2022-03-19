@@ -14,10 +14,10 @@
                     <td><lable><?= $value['name_category'] ?></lable></td>
                     <td class="button-table-type">
                         <button type="button" class="btn btn-warning btn-edit" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
-                            แก้ไข
+                            <i class="fas fa-edit"></i> &nbsp;แก้ไข
                         </button>
                         <button type="button" class="btn btn-danger btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            ลบ
+                            <i class="fas fa-trash-alt"></i> &nbsp;ลบ
                         </button>
                     </td>
                 </tr>
@@ -31,16 +31,16 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">แก้ไข</h5>
+                <h5 class="modal-title modal-title-edit" id="staticBackdropLabel">แก้ไขหมวดหมู่</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <label class="form-label">ชื่อหมวดหมู่</label>
-                <input type="text" class="form-control">
+            <div class="modal-body-edit">
+                <label class="form-label form-label-edit">ชื่อหมวดหมู่</label>
+                <input type="text" class="form-control form-control-edit">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
-                <button type="button" class="btn btn-primary">ยืนยัน</button>
+                <button type="button" class="btn btn-secondary btn-cancel-edit" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-primary btn-ok-edit">ยืนยัน</button>
             </div>
         </div>
     </div>
@@ -51,15 +51,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">ลบ</h5>
+                <h5 class="modal-title modal-title-delete" id="exampleModalLabel">ลบหมวดหมู่</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                คุณต้องการลบหมวดหมู่ ... ไหม?
+            <div class="modal-body-delete">
+                <label class="form-label form-label-delete">คุณต้องการลบหมวดหมู่ ... ไหม?</label>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
-                <button type="button" class="btn btn-primary">ยืนยัน</button>
+                <button type="button" class="btn btn-secondary btn-cancel-delete" data-bs-dismiss="modal">ยกเลิก</button>
+                <button type="button" class="btn btn-danger btn-ok-delete">ลบ</button>
             </div>
         </div>
     </div>
