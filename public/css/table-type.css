@@ -17,14 +17,54 @@
     display: flex;
     justify-content: center;
 }
+
 .btn-edit {
     border-radius: 20px;
     width: 100px;
     margin: 0% 2% 0% 0%;
+}
+.modal-title-edit {
+    color: #EF5DA8;
+    font-weight: bold;
+}
+.modal-body-edit {
+    padding: 6% 10%;
+}
+.form-label-edit {
+    margin: 0% 0% 1% 1%;
+}
+.form-control-edit {
+    border-radius: 20px;
+}
+.btn-cancel-edit {
+    border-radius: 20px;
+    width: 100px;
+}
+.btn-ok-edit {
+    border-radius: 20px;
+    width: 100px;
 }
 
 .btn-delete {
     border-radius: 20px;
     width: 100px;
     margin: 0% 0% 0% 2%;
+}
+.modal-title-delete {
+    color: #EF5DA8;
+    font-weight: bold;
+}
+.modal-body-delete {
+    padding: 6% 10%;
+}
+.form-label-delete {
+    margin: 0% 0% 1% 1%;
+}
+.btn-cancel-delete {
+    border-radius: 20px;
+    width: 100px;
+}
+.btn-ok-delete {
+    border-radius: 20px;
+    width: 100px;
 }

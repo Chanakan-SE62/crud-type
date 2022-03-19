@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,14 +17,16 @@
     <title>Manage Category</title>
 
     <link rel="stylesheet" href="/CSS/table-type.css">
+    <link rel="stylesheet" href="/CSS/button-create.css">
 
     <style>
         .container {
             padding: 0% 10% 0% 10%;
         }
-        .text-type {
-            /* text-align: center; */
-            margin: 8% 0% 2% 0%;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin: 3% 0% 2% 0%;
         }
     </style>
 </head>
@@ -34,7 +37,11 @@
     ?>
     <?php require('components/navbar.php'); ?>
     <div class="container">
-        <h2 class="text-type">จัดการหมวดหมู่กิจกรรม</h2>
+        <div class="title">
+            <h2 class="text-type">จัดการหมวดหมู่กิจกรรม</h2>
+            <?php require('components/button-create.php'); ?>
+        </div>
+        
         <hr/>
         <?php require('components/table-type.php'); ?>
     </div>
