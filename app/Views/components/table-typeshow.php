@@ -26,29 +26,6 @@
     </table>
 </div>
 
-<!-- แก้ไข -->
-<div class="modal fade" id="staticBackdropEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title modal-title-edit" id="staticBackdropLabel">แก้ไขหมวดหมู่</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="/AdminController/updateData" method="POST">
-                <div class="modal-body-edit">
-                    <input type="hidden" class="form-control form-control-edit" value="<?= $data['categoryId'] ?>" name="categoryId">
-                    <label class="form-label form-label-edit">ชื่อหมวดหมู่</label>
-                    <input type="text" class="form-control form-control-edit" value="<?= $data['name_category'] ?>" name="name_category">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-cancel-edit" data-bs-dismiss="modal">ยกเลิก</button>
-                    <button type="submit" class="btn btn-primary btn-ok-edit">ยืนยัน</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
 <!-- ลบ -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -58,7 +35,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body-delete">
-                <label class="form-label form-label-delete">คุณต้องการลบหมวดหมู่ <?php echo('') ?> ไหม?</label>
+                <label class="form-label form-label-delete">คุณต้องการลบหมวดหมู่นี้ไหม?</label>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-cancel-delete" data-bs-dismiss="modal">ยกเลิก</button>

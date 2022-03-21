@@ -10,14 +10,16 @@
                 <h5 class="modal-title modal-title-create" id="staticBackdropLabel">เพิ่มหมวดหมู่</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body-create">
-                <label class="form-label form-label-create">ชื่อหมวดหมู่</label>
-                <input type="text" class="form-control form-control-create">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-cancel-create" data-bs-dismiss="modal">ยกเลิก</button>
-                <button type="button" class="btn btn-primary btn-ok-create">เพิ่ม</button>
-            </div>
+            <form action="/AdminController/addType" method="POST">
+                <div class="modal-body-create">
+                    <label class="form-label form-label-create">ชื่อหมวดหมู่</label>
+                    <input type="text" class="form-control form-control-create" name="name_category">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-cancel-create" data-bs-dismiss="modal">ยกเลิก</button>
+                    <button type="submit" class="btn btn-primary btn-ok-create">เพิ่ม</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

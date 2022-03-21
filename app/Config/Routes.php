@@ -34,7 +34,9 @@ $routes->setAutoRoute(true);
 
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'AdminController::index');
-$routes->get('/type', 'AdminController::type');
+$routes->get('/typeShow', 'AdminController::type');
+$routes->get('/type/(:any)', 'AdminController::showData/$1',);
+$routes->get('/delete/(:any)', 'AdminController::deleteData/$1',);
 
 /*
  * --------------------------------------------------------------------
